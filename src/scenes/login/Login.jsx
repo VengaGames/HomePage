@@ -51,7 +51,7 @@ const Login = () => {
             maxLength={15}
             onInvalid={(e) => e.target.setCustomValidity("Choisis un pseudo !")}
           />
-          <div className="flex flex-col items-center">
+          <div className="flex justify-center">
             <button className="bg-[#FDFDFD] rounded-3xl text-center flex flex-row justify-center items-center my-4 p-2 font-semibold" type="submit">
               Rejoindre
             </button>
