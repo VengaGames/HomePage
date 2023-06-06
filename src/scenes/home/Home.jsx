@@ -14,8 +14,7 @@ const Home = () => {
           <NavLink
             className="mt-10 flex w-56 flex-row items-center justify-center rounded-3xl bg-[#FDFDFD] text-center transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
             to={`/login?game=${game.to}`}
-            end
-          >
+            end>
             <p className="p-3 font-semibold">Jouer</p>
             <img className="h-4 w-5" src={manette} alt="manette logo" />
           </NavLink>
