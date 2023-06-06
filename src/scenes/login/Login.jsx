@@ -26,15 +26,15 @@ const Login = () => {
   return (
     <>
       <NavLink to="/" end className="absolute">
-        <HiArrowLeft className="text-white ml-2 mt-2 w-10 h-10 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300" alt="icone fleche retour" />
+        <HiArrowLeft className="ml-2 mt-2 h-10 w-10 text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" alt="icone fleche retour" />
       </NavLink>
-      <div className="w-full flex flex-col items-center justify-center mt-10">
-        <h1 className="text-lg my-6 text-white font-semibold ">{vengaGames[gameTo]?.name}</h1>
-        <form onSubmit={handlesubmit} className="flex flex-col bg-[#1e1f29] rounded-xl">
+      <div className="mt-10 flex w-full flex-col items-center justify-center">
+        <h1 className="my-6 text-lg font-semibold text-white ">{vengaGames[gameTo]?.name}</h1>
+        <form onSubmit={handlesubmit} className="flex flex-col rounded-xl bg-[#1e1f29]">
           <input
             placeholder="Nom de la room"
             autoComplete="off"
-            className="mt-6 bg-[#494B5A] !ring-0 !outline-none rounded-lg text-white shadow-md shadow-[rgba(0, 0, 0, 0.25)] p-6 py-3 font-semibold mr-6 ml-6  "
+            className="shadow-[rgba(0, 0, 0, 0.25)] ml-6 mr-6 mt-6 rounded-lg bg-[#494B5A] p-6 py-3 font-semibold text-white shadow-md !outline-none !ring-0  "
             required
             type="text"
             name="room"
@@ -44,7 +44,7 @@ const Login = () => {
           <input
             placeholder="Ton Pseudo"
             autoComplete="off"
-            className="bg-[#494B5A] !ring-0 !outline-none rounded-lg text-white shadow-md shadow-[rgba(0, 0, 0, 0.25)] p-6 py-3 font-semibold mt-2 mr-6 ml-6 "
+            className="shadow-[rgba(0, 0, 0, 0.25)] ml-6 mr-6 mt-2 rounded-lg bg-[#494B5A] p-6 py-3 font-semibold text-white shadow-md !outline-none !ring-0 "
             required
             name="name"
             type="text"
@@ -52,7 +52,7 @@ const Login = () => {
             onInvalid={(e) => e.target.setCustomValidity("Choisis un pseudo !")}
           />
           <div className="flex justify-center">
-            <button className="bg-[#FDFDFD] rounded-3xl text-center flex flex-row justify-center items-center my-4 p-2 font-semibold" type="submit">
+            <button className="my-4 flex flex-row items-center justify-center rounded-3xl bg-[#FDFDFD] p-2 text-center font-semibold" type="submit">
               Rejoindre
             </button>
           </div>
