@@ -15,7 +15,7 @@ const Login = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [gameTo]);
 
-  const handlesubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const room = e.target.elements.room.value;
     const name = e.target.elements.name.value;
@@ -26,11 +26,11 @@ const Login = () => {
   return (
     <>
       <NavLink to="/" end className="absolute">
-        <HiArrowLeft className="ml-2 mt-2 h-10 w-10 text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" alt="icone fleche retour" />
+        <HiArrowLeft className="ml-2 mt-2 h-10 w-10 text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" alt="fleche retour" />
       </NavLink>
       <div className="mt-10 flex w-full flex-col items-center justify-center">
         <h1 className="my-6 text-lg font-semibold text-white ">{vengaGames[gameTo]?.name}</h1>
-        <form onSubmit={handlesubmit} className="flex flex-col rounded-xl bg-[#1e1f29]">
+        <form onSubmit={handleSubmit} className="flex flex-col rounded-xl bg-[#1e1f29]">
           <input
             placeholder="Nom de la room"
             autoComplete="off"
