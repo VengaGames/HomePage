@@ -8,6 +8,7 @@ export const vengaGames = {
     to: "uno",
     img: uno,
     url: "https://uno-lh06.onrender.com",
+    api: "https://venga-uno-api.fly.dev",
   },
   playlist: {
     name: "Le Jeu De La Playlist",
